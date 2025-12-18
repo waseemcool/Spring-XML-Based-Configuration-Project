@@ -9,7 +9,7 @@ XML-based Configuration is a Spring Configuration approach where you define bean
 
 **Key characteristics:**
 
-* Beans are declared using <bean> tags with id and class attributes
-* Dependencies are injected through <property> (setter injection) or <constructor-arg> (constructor injection) tags
-* Configuration is completely separate from your Java code
-* Requires an XML parser to load the application context
+* Beans are declared using <bean> tags with id and class attributes.
+* Dependencies are injected through <property> (setter injection) or <constructor-arg> (constructor injection) tags.
+* Configuration is completely separate from your Java code.
+* Requires an XML parser to load the application context.
