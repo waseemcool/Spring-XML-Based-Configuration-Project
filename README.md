@@ -7,7 +7,7 @@ In the Spring Framework, there are three main configuration types:
 
 XML-based Configuration is a Spring Configuration approach where you define beans and their properties, dependencies in external XML file (like applicationContext.xml).
 
-**Key characteristics:**
+**Key Characteristics**
 
 ✅ Beans are declared using <bean> tags with id and class attributes.
 
