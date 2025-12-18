@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="st1" class="com.kss.Student" autowire="byType">-->
+<!--&lt;!&ndash;        <property name="age" value="20" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="rollNo" value="16" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="pen" ref="p1" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="writer" ref="p1" />&ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="st1" class="com.kss.Student" autowire="constructor">
+        <constructor-arg index="0" value="20" />
+        <constructor-arg index="1" value="16" />
+<!--        <constructor-arg index="2" ref="pc1" />-->
+    </bean>
+
+    <bean id="st2" class="com.kss.Student">
+    </bean>
+
+<!--    <bean class="com.kss.Teacher">-->
+<!--    </bean>-->
+
+    <bean id="p1" class="com.kss.Pen">
+    </bean>
+
+<!--    <bean id="pc1" class="com.kss.Pencil">-->
+<!--    </bean>-->
+
+    <bean id="pc1" class="com.kss.Pencil" primary="true">
+    </bean>
+
+<!--    <bean id="writer" class="com.kss.Pencil">-->
+<!--    </bean>-->
+</beans>
